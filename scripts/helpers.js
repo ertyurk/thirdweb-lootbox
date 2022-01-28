@@ -21,7 +21,7 @@ export const sdk = new ThirdwebSDK(
   ),
 );
 
-const appAddress = '0x...'; // your project address from thirdweb
+const appAddress = process.env.PROJECT_ADDRESS; // your project address from thirdweb
 
 export async function getApp() {
   const app = await sdk.getAppModule(appAddress);
