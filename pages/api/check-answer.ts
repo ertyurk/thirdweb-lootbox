@@ -1,8 +1,9 @@
-import quizQuestions from "../../lib/questions";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { ethers, BigNumber } from "ethers";
-import { packAddress } from "../../lib/contractAddresses";
 import { ThirdwebSDK } from "@3rdweb/sdk";
+
+import { packAddress } from "../../lib/contractAddresses";
+import quizQuestions from "../../lib/questions";
 
 export type CheckAnswerPayload = {
   questionIndex: number;
